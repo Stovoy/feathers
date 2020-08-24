@@ -7,9 +7,30 @@ __lua__
 -- text displays explaining that you are sad for some reason
  -- need to create dialogue controls
 -- you need to find friends - then gameplay begins
--- 
---
---
+
+-- world ideas:
+-- clouds that you can walk on
+-- cave section with stalagtites
+-- wind gusts
+-- clouds could disappear
+-- volcanos and geysers
+-- skateboard that you do sick tricks on - polsaar
+-- palm trees that you bounce off of
+-- bamboo shoots to launch yourself really far
+-- seasons? snow? this might be a good way to change the world
+-- birds don't have to be the only animals, we can have alligators
+-- maybe it should start in the winter
+-- maybe initially winter seems sad because of art + music
+-- at end of game, loop back to winter, but it's poggers
+-- ending cutscene making a snowangel + snowbird or else
+-- winter -> spring -> summer -> autumn -> winter
+-- how to make spring sad - maybe it's rainy!
+-- make the character spiderman
+-- "aw bird, i hate the rain"
+-- relapse angle? happy in spring, but then storm and super sad
+-- then second feather and gets second wind
+-- have only a few songs but use major + minor key to change
+-- their emotionality - motiffs!
 
 -- feathers by stovoy
 
@@ -251,7 +272,8 @@ function draw_world()
  for i=0,500 do
   local y = (t + i * 5) % h
   local x = rnd(w * 2) - w + y
-  line(x, y, x + 3, y + 3, 1)
+  local l = 2 + rnd(3)
+  line(x, y, x + l, y + l, 1)
  end
  srand(t)
 
@@ -725,9 +747,10 @@ __sfx__
 00100000207501b7501975018750177501b7501975018750167501b7501975018750207501470020700287002b70029700237001b700147001170025700287002c7002e7002e7002f7002e7002d7002360020600
 001000001d5501a55017550155501455012550115500f5500e5500e5500e550000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 001000000575003720000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00200008051501115005140181401a1101c1001d14007130121301a1200f1301a1301c140161400f14008130081200c1301014013150161401a1401c1401b1401714013140101300e13010130211201e12000020
 __music__
 03 01414144
-00 41414144
+00 05414144
 00 41414144
 00 41414144
 00 41414144
